@@ -1,0 +1,74 @@
+body {
+  font-family: sans-serif;
+  margin: 0 50px;
+  background-color: #f0f4f8; /* Light blue-gray background */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background-color: #ffffff; /* White background for the app */
+  width: 320px; /* Increased width */
+  height: 520px; /* Increased height */
+  border: 3px solid #007bff; /* Blue border */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: #007bff; /* Blue color for the plus icon */
+  padding: 4px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+#tasks div {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+  padding: 12px 12px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 10px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+  color: #007bff; /* Blue color for icons */
+}
+
+#msg {
+  color: #ff4d4f; /* Red color for error message */
+}
